@@ -1,0 +1,5 @@
+### Summary
+
+The article explains how MediaPipe can analyse facial expressions to estimate emotions. It detects 468 facial landmarks, with each point having x, y and z coordinates, giving 1,404 values in total. These landmarks cover features such as the eyes, eyebrows and mouth.
+Since facial coordinates can change with different camera angles or positions, Procrustes analysis is used to align and normalize them. The article describes three ways to extract features: manually calculated geometric features, the 1,404 landmark coordinates and their changes from a neutral expression, and 52 MediaPipe blendshape scores for movements like blinking, smiling and eyebrow movement.
+The extracted features can be classified using models such as Random Forest, SVM, MLP, CNN and GNN.
