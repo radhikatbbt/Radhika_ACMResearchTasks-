@@ -1,6 +1,7 @@
-### Summary
+## Short Review: *Can Your Camera Tell if You’re Bored in Class?*
 
-The article explains how MediaPipe can analyse facial expressions to estimate emotions. It detects 468 facial landmarks, with each point having x, y and z coordinates, giving 1,404 values in total. These landmarks cover features such as the eyes, eyebrows and mouth.
-Since facial coordinates can change with different camera angles or positions, Procrustes analysis is used to align and normalize them. The article describes three ways to extract features: manually calculated geometric features, the 1,404 landmark coordinates and their changes from a neutral expression, and 52 MediaPipe blendshape scores for movements like blinking, smiling and eyebrow movement.
-The extracted features can be classified using models such as Random Forest, SVM, MLP, CNN and GNN.
-The main thing I found interesting was how a normal camera image can be converted into numbers and then used by a machine learning model. The whole process goes from detecting the face → finding landmarks → normalizing them → extracting features → predicting the emotion.
+The article **“Can Your Camera Tell if You’re Bored in Class?”** explains how computer vision can be used to understand facial expressions using **MediaPipe** by Google. The basic idea is pretty cool because instead of a teacher asking, “Why does everyone look half asleep?”, a camera could actually try to figure it out and could also be used in analysis of student behavior. MediaPipe detects **468 3D facial landmarks**, and converts it into x, y and z co-ordinates. These points can then be used to understand how a person's face is changing.
+
+The article mainly focuses on **three steps**. First, the facial landmarks are normalized so things like the distance from the camera or the angle of the face don't mess up the results. Second, useful features are extracted from these landmarks. This can be done using measurements, deep learning or MediaPipe's **52 blendshape scores**. Third, a machine-learning model such as Random Forest, SVM, CNN, GNN and MLP can use these features to classify expressions. I found this part interesting because there is actually a lot happening behind what looks like a simple “camera looking at your face.”
+
+The important thing to note is that although AI can analyze faces, it still lacks the ability to understand raw human emotions and hence actions should be taken mindfully
