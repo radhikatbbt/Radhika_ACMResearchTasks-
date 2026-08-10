@@ -1,41 +1,64 @@
-# Netflix Movies & TV Shows — EDA
+# ACM Research Tasks
 
-## What is this?
+This repository contains my work for the ACM Research Tasks. It has three main parts — a small Python task, a blog review, and a research paper summary.
 
-This is a small Exploratory Data Analysis project on the Netflix Movies and TV Shows dataset.
+## 📁 Folder Structure
 
-I used this dataset to get comfortable with Python, Pandas, data cleaning, and making sense of data through graphs. Instead of only looking at the numbers, I also tried to explore a few questions that I found interesting along the way.
+```text
+Radhika_Korade_ACMRResearchTasks/
+│
+├── README.md
+│
+├── task0/
+│   └── transform_logs.py
+│
+├── task1/
+│   └── blog_review.md
+│
+├── task2/
+│   └── paper_summary.md
+│
+└── bonus/
+    └── eda.ipynb
+```
 
-## What I worked with
+## Task 0 – Sneaky Log Cleaner
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Google Colab
+For this task, I made a small Python program that takes messy log-like text and cleans it up.
 
-### 🇮🇳 India's presence on Netflix
+It can:
 
-I wanted to see how Indian content has changed in the Netflix catalogue over the years.
+* Hide email addresses by replacing them with `[HIDDEN]`
+* Convert date and time formats into a more readable form
+* Add 🚨 before `ERROR`
+* Remove unnecessary spaces
 
-The graph showed a sharp increase in Indian titles added between 2016 and 2018, with 2018 being the peak in this dataset. The number of additions then dropped in the following years.
+I used basic Python along with `re` and `datetime`. I also tested it in Google Colab to make sure the transformations were working properly.
 
-## Visualizations
+## Task 1 – Blog Review
 
-Some of the graphs included in the notebook are:
+For this task, I read **“Can Your Camera Tell if You're Bored in Class?”**
 
-- Movies vs TV Shows
-- Top 5 countries
-- Indian content added over time
-- Top directors
-- Netflix titles added by year
-- Top genres
+The blog talks about using computer vision and facial landmarks to understand expressions and possibly detect things like boredom. I found the idea interesting because it shows how something as simple as a camera can be combined with AI to analyse facial movements.
 
-## Dataset
+**Blog:** [Can Your Camera Tell if You're Bored in Class?](https://medium.com/@samikshapatil486/can-your-camera-tell-if-youre-bored-in-class-bfece6871e58?utm_source=chatgpt.com)
 
-The project uses the Netflix Movies and TV Shows dataset from Kaggle.
+My review is in `task1/blog_review.md`.
 
-It contains information such as title, type, director, country, release year, date added, rating, duration, genres, and description.
+## Task 2 – Research Paper Summary
 
+For this task, I read **“Ten Simple Rules for Reading a Scientific Paper.”**
 
+The paper explains how to approach research papers without getting stuck trying to understand everything at once. The point I found most useful was to **read the abstract first and check if the paper is actually relevant**. After that, the introduction, methods, results, discussion, conclusion and references can be used to understand the research properly.
+
+**Paper:** [Ten Simple Rules for Reading a Scientific Paper](https://www.researchgate.net/publication/343331371_Ten_simple_rules_for_reading_a_scientific_paper?utm_source=chatgpt.com)
+
+My summary is in `task2/paper_summary.md`.
+
+## Bonus
+
+The `bonus/` folder contains `eda.ipynb` for the optional bonus task.
+
+## Overall
+
+These tasks were a nice mix of **coding and research**. I got to work with Python, read about a computer-vision application, and learn how to approach research papers more effectively. The main thing I took away is that research isn't just about finding information - it's also about knowing **what to look for, understanding it, and explaining it in your own words**.
